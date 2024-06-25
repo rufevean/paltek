@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HomePage from './layouts/homePage';
 import SplashScreen from './layouts/splashScreen';
@@ -16,23 +16,29 @@ function App() {
       }
     };
 
+    const handleClick = () => {
+      console.log('Screen clicked');
+      setShowSplash(false);
+    };
+
     window.addEventListener('keypress', handleKeyPress);
+    window.addEventListener('click', handleClick);
 
     return () => {
       window.removeEventListener('keypress', handleKeyPress);
+      window.removeEventListener('click', handleClick);
     };
   }, []);
 
   if (showSplash) {
     return <SplashScreen />;
-    console.log('showSplash');
   }
 
   return (
     <Router>
-      <Routes> 
-        <Route  path="/" element={<HomePage />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </Router>
   );
 }

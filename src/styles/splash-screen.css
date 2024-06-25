@@ -29,7 +29,7 @@
 }
 
 .splash{
-    background:url("../assets/splash-screen.png") no-repeat center center/cover;
+    background:url("../assets/splash-screen3.png") no-repeat center center/cover;
 }
 
 .splash-text{
@@ -42,4 +42,11 @@
 
 .splash-enter{
     font-size : 1.2rem;
+    margin-top: 5rem;
 }
+
+
+.splash-enter:hover{
+    cursor: pointer;
+    color: #DC143C;
+} 
