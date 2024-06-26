@@ -1,0 +1,27 @@
+
+.nav-bar{
+    display: flex;
+    position: fixed;
+    top : 0 ;
+    gap:3rem;
+    color : #DC143C;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: calc(100vw - 4rem); 
+    font-size: 1.2rem;
+    font-family : 'Lato', sans-serif;
+    margin: 0 auto; 
+    height: 5rem;
+}
+
+.nav-logo{
+    scale:0.5;
+}
+
+a{
+    text-decoration: none;
+    color : #DC143C !important;
+}
+
+
