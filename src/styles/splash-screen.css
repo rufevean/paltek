@@ -45,7 +45,8 @@
 
 .splash-enter{
     font-size : 1.2rem;
-    font-family: 'Comic Neue', cursive;
+
+    font-family: 'Comic Sans MS', sans-serif;
     margin-top: 5rem;
 }
 
@@ -54,3 +55,8 @@
     cursor: pointer;
     color: #DC143C;
 } 
+
+
+.splash-pal{
+    font-family: 'tele-marines', sans-serif; 
+}

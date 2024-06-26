@@ -6,7 +6,6 @@ function HomePage() {
   return (
     <div className="home-page">
 
-            <div className="animated-static-bg"></div>
       <NavBar /> 
       WIP 
     </div>

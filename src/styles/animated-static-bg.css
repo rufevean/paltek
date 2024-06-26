@@ -15,8 +15,8 @@
     height: 200vh;
     background: transparent url("../assets/noise_transparent.png") repeat 0 0;
     background-repeat: repeat;
-    animation: bg-animation .2s infinite;
-    opacity: .9;
+    animation: bg-animation 100s infinite;
+    opacity: 1;
     visibility: visible;
     pointer-events: none;
 }
