@@ -10,7 +10,7 @@ function SplashScreen() {
   return (
     <div className="splash">
       <div className="animated-static-bg"></div> 
-      <content className="splash-content">
+      <div className="splash-content">
         <img src={logo} alt="logo" className="logo"/>
         <h1 className="splash-title">What is <span className="splash-highlight">PAL</span> ?</h1>
       
@@ -20,7 +20,7 @@ function SplashScreen() {
         <p className="splash-text"> <span className="splash-highlight" >P</span>erformant <span className="splash-highlight" >A</span>ugmentable <span className="splash-highlight" >L</span>anguage  — <span className="splash-italic">fast and extensible </span> </p>
         <p className="splash-text"> <span className="splash-highlight splash-pal" >PAL</span> —  <span className="splash-italic" > a true friend indeed to the computer programmer </span> </p>
         <div className="splash-enter"><span className="splash-highlight" >[ </span> Enter to continue <span className="splash-highlight" >] </span> </div>
-      </content> 
+      </div> 
 
     </div>
   );
