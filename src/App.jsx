@@ -1,8 +1,9 @@
-
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HomePage from './layouts/homePage';
+import Features from  './layouts/features';
 import SplashScreen from './layouts/splashScreen';
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/features" element={<Features />} />
+
       </Routes>
     </Router>
   );

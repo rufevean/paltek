@@ -1,4 +1,4 @@
-
+import React from 'react';
 import '../styles/nav-bar.css';
 import logo from '../assets/logo.png'; 
 import { Link } from 'react-router-dom'; 
@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
     return (
         <nav className="nav-bar">
-            <Link to="/features" className="nav-features nav-item ">Features</Link> 
+        <a href="http://pal-features.vercel.app/posts" className="nav-features nav-item">Features</a>
+
             <Link to="/documentation" className="nav-docs nav-item">Documentation</Link>
             <Link to="/forum" className="nav-forum nav-item">Forum</Link>
 
