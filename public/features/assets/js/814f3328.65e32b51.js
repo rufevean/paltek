@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfeatures=self.webpackChunkfeatures||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"whypal","permalink":"/features/whypal","unlisted":false},{"title":"planetsandmoons","permalink":"/features/planetsandmoons","unlisted":false},{"title":"phrasing","permalink":"/features/phrasing","unlisted":false}]}')}}]);

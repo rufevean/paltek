@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
     return (
         <nav className="nav-bar">
-        <a href="http://pal-features.vercel.app/posts" className="nav-features nav-item">Features</a>
+        <a href="/features" className="nav-features nav-item">Features</a>
 
             <Link to="/documentation" className="nav-docs nav-item">Documentation</Link>
             <Link to="/forum" className="nav-forum nav-item">Forum</Link>

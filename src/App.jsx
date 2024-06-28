@@ -1,9 +1,9 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HomePage from './layouts/homePage';
-import Features from  './layouts/features';
+import Features from './layouts/features';
 import SplashScreen from './layouts/splashScreen';
 
 function App() {
@@ -31,7 +31,10 @@ function App() {
     };
   }, []);
 
-  if (showSplash) {
+  // Determine whether to show splash screen based on the current route
+  const shouldShowSplash = showSplash && window.location.pathname === '/';
+
+  if (shouldShowSplash) {
     return <SplashScreen />;
   }
 
@@ -40,7 +43,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/features" element={<Features />} />
-
+        {/* Add more routes as needed */}
       </Routes>
     </Router>
   );
