@@ -5,26 +5,63 @@
  */
 
 /* You can override the default Infima variables here. */
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-color-primary: crimson;
+    --ifm-color-primary-dark: crimson;
+    --ifm-color-primary-darker: crimson;
+    --ifm-color-primary-light: crimson;
+    --ifm-color-primary-lighter: crimson;
+    --ifm-color-primary-lightest: crimson;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+html[data-theme='dark'] {
+    --ifm-color-primary: crimson;
+    --ifm-color-primary-dark: crimson;
+    --ifm-color-primary-darker: crimson;
+    --ifm-color-primary-light: crimson;
+    --ifm-color-primary-lighter: crimson;
+    --ifm-color-primary-lightest: crimson;
+}
+
+/* Optionally, you can override other related CSS variables if needed */
+
+
+/* src/styles/nav-bar.css */
+.navbar__inner{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.navbar__items{
+    text-align: center;
+    justify-content:center;
+    width: 100vw;
+}
+
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.nav-features, .nav-docs, .nav-forum, .nav-home, .nav-playground, .nav-obtain, .nav-notes {
+  margin-right: 15px;
+}
+
+.nav__home{
+    background : url("../../static/img/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    padding: 0 2rem;
+    margin: 0 2rem;
 }

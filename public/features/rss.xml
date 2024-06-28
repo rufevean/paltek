@@ -1,31 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>My Site Blog</title>
+        <title>Pal-Tek  Blog</title>
         <link>https://your-docusaurus-site.example.com/features/</link>
-        <description>My Site Blog</description>
-        <lastBuildDate>Fri, 28 Jun 2024 06:28:32 GMT</lastBuildDate>
+        <description>Pal-Tek  Blog</description>
+        <lastBuildDate>Fri, 28 Jun 2024 14:01:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[whypal]]></title>
-            <link>https://your-docusaurus-site.example.com/features/whypal</link>
-            <guid>https://your-docusaurus-site.example.com/features/whypal</guid>
-            <pubDate>Fri, 28 Jun 2024 06:28:32 GMT</pubDate>
-            <description><![CDATA[---]]></description>
-            <content:encoded><![CDATA[<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="slug-mdx-blog-posttitle-planets--moonsauthors-slorbertags-docusaurus">slug: mdx-blog-post
-title: planets &amp; moons
-authors: [slorber]
-tags: [docusaurus]<a class="hash-link" aria-label="Direct link to slug: mdx-blog-post
-title: planets &amp; moons
-authors: [slorber]
-tags: [docusaurus]" title="Direct link to slug: mdx-blog-post
-title: planets &amp; moons
-authors: [slorber]
-tags: [docusaurus]" href="https://your-docusaurus-site.example.com/features/whypal#slug-mdx-blog-posttitle-planets--moonsauthors-slorbertags-docusaurus">​</a></h2>
-<p>Origineering’s corner stone product is a computer programming language / Operating System called PAL, (acronym for Pan Application Language). It isn’t just a software development tool, but a complete paradigm shift, and is anticipated to be a disruptive technology, like the automobile was to the horse and buggy.</p>
+            <title><![CDATA[Planets & Moons]]></title>
+            <link>https://your-docusaurus-site.example.com/features/Planets &amp; Moons</link>
+            <guid>https://your-docusaurus-site.example.com/features/Planets &amp; Moons</guid>
+            <pubDate>Fri, 28 Jun 2024 14:01:05 GMT</pubDate>
+            <description><![CDATA[Introduction]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="introduction"><em>Introduction</em><a class="hash-link" aria-label="Direct link to introduction" title="Direct link to introduction" href="https://your-docusaurus-site.example.com/features/Planets%20&amp;%20Moons#introduction">​</a></h3>
+<p>In software development the term <em>design pattern</em> is a useful appellation for a reoccurring issue that was dealt with haphazardly (often by boiler-plate machinations) but is now understood well enough to get a systematized solution and label.</p>
+<p><em>Planet</em> <em>&amp; moons</em> is a design pattern unique to <em>PAL</em>; no coding language has ever conceived of this feature let alone implemented it.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-they-are"><em>What they are</em><a class="hash-link" aria-label="Direct link to what-they-are" title="Direct link to what-they-are" href="https://your-docusaurus-site.example.com/features/Planets%20&amp;%20Moons#what-they-are">​</a></h3>
+<p>The <em>planet</em> is the main function which takes some input arguments and produces some outputs.  When the input arguments need to be managed (often to increase invocation clarity) or when the function needs to be modified, then moons are used.</p>
+<p>Whenever a planet is created, all its moons are defined with it at the same time.</p>
+<p>The <em>moons</em> are specialized local functions, which act as either adverbs, or as adjectives.  When used as adjectives, they qualify the inputs to their planet; they group, categorize, and describe their planet function’s argument list.  Moons only become visible when their planet is invoked, since they are proximity based.</p>
+<p>The reason for the specific terms ‘planet’ and ‘moons’ are:</p>
+<p>Moons are local to the planet they <em>orbit</em>; their names only come into scope through proximity of the planet they are nearest to.  Outside of the orbit of their planet, moons are invisible.</p>
+<p>The planet is <em>big</em> because moons orbit it, not the other way around; it is the influencer, and dictates the meanings of the local moons around it.</p>
+<p>Moons are <em>small</em> because there can be many of them, and they all get their prescribed meaning from the planet they orbit.</p>
+<p>The scope of the moons lie in “the shadow’’ of their planet; if their planet function isn't nearby, the moons become invisible to the current scope.  If a moon so happens to have the same name as some other entity in a wider contextual scope, then its locally (planetary proximity dictated) prescribed meaning takes precedence, and over-rides the outer scope meaning.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-we-need-them"><em>Why we need them</em><a class="hash-link" aria-label="Direct link to why-we-need-them" title="Direct link to why-we-need-them" href="https://your-docusaurus-site.example.com/features/Planets%20&amp;%20Moons#why-we-need-them">​</a></h3>
+<p>To aid comprehension, we need to appreciate the <em><strong>need</strong></em> that planet &amp; moons fill.  This is best achieved with a concrete example.</p>
+<p>Imagine a function called <em>rotate</em>, that takes 8 arguments for its input, and outputs a tuple of 3 values, and all 8 inputs are of the same data type; which is the default numeric Real.   Invoking would look like this in source-code:</p>
+<code style="color:lightskyblue">x, y, z  ←  rotate(x, y, z, X, Y, Z, theta, phi)</code>
+<p>We will now zoom in on the actual function call; no longer showing its output being captured by the assignment statement.  So now we simply have:</p>
+<code style="color:lightskyblue">rotate(x, y, z, X, Y, Z, theta, phi)</code>
+<p>Excluding the fact it outputs a tuple, this could be done in almost any coding language.</p>
+<p>The question is: how far can we improve our code to explicate the meaning (purpose and intent) of this function invocation?</p>
+<p>We can use white space to meaningfully segregate the various function arguments:</p>
+<code style="color:lightskyblue">rotate(x, y, z,  X,Y,Z,  theta, phi)</code>
+<p>which helps a bit.</p>
+<p>More significantly we can replace the tacit arguments with meaningful names.  Something like:</p>
+<code style="color:lightskyblue">rotate(x, y, z,  X_origin, Y_origin, Z_origin,  theta, phi)</code>
+<p>In any other language we would have now reached the end of the road; since no more improvements to readability can be done.</p>
+<p>But not for us; with <em>PAL</em> we can employ <em>source–hinting</em> to take us further, like a Sherpa guide, up the mountain of clarity.  We can insert explanatory words (in this case, <em>round</em> and <em>by</em>) to give us:</p>
+<code style="color:lightskyblue">rotate(x, y, z,  ‹round› X_origin, Y_origin, Z_origin,  ‹by› theta, phi)</code>
+<p>In fact, we can now <strong>increase</strong> clarity by reverting back to using the shorter tacit argument names again:</p>
+<code style="color:lightskyblue">rotate(x, y, z,  ‹round› X, Y, Z,  ‹by› theta, phi)</code>
+<p>We are not done yet, because <em>PAL</em> also provides us with an extended (and extensible) glyph range for symbol names, so we can replace the ‘‘theta’’ and ‘‘phi’’ with shorter names while boosting clarity.</p>
+<p>Heck while we are at it, we can also come up with better names for the ‘X’, ‘Y’, and ‘Z’ too:</p>
+<code style="color:lightskyblue">rotate(x, y, z,  ‹round› χ, ƴ, ȥ,  ‹by› θ, ϕ)</code>
+<p>Lastly, since we are permitted relaxed–functions, we can ditch the function parenthesis, since they aren't really earning their keep.  Which brings us to:
+p
+<code style="color:lightskyblue">rotate  x, y, z,  ‹round› χ, ƴ, ȥ,  ‹by› θ, ϕ</code></p>
+<p>We could go further and omit all those comas too, but we will stop here.</p>
+<p>So in the journey of elucidating our use of this rotate function, it would seem no more can be done to enhance readability.</p>
+<p>But we have <strong>not</strong> reached the summit; there remain some arbitrary limitations to what we have achieved:</p>
+<p>What if we want to be able to omit more than one argument by being able to rely on some default values being provided to this function?</p>
+<p>(Remember that it was stated earlier that ALL the input arguments to this function are of the SAME data type; this would normally mean that only the last function argument can be specified to be an <em>optional</em> parameter.)</p>
+<p>Why not be able to change the invocation order of the arguments?</p>
+<p>For example, maybe it would look nicer to specify the rotation angles: (θ ϕ) prior to specifying the pivot coordinate: (χ ƴ ȥ).</p>
+<p>The only way forward now, is through use of the planet &amp; moons facility.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-make-them"><em>How to make them</em><a class="hash-link" aria-label="Direct link to how-to-make-them" title="Direct link to how-to-make-them" href="https://your-docusaurus-site.example.com/features/Planets%20&amp;%20Moons#how-to-make-them">​</a></h3>
+<p>We will now define or extend our function to be a planet, with associated moon functions.</p>
+<p>This is easily done, like so:</p>
+<code style="color:lightskyblue">▪ rotate (x  y  z)   round (χ  ƴ  ȥ)   by (θ  ϕ)   ───‣   (x  y  z)</code>
+<br>
+<code style="color:lightskyblue">◌</code>
+<br>
+<code style="color:lightskyblue">◌</code>
+<br>
+<code style="color:lightskyblue">◌</code>
+<p>In the above definition, the planet function is <em>rotate</em>, and it has 2 moons: <em>by</em> and <em>around</em>; which both gather and label the parameters.  (The dotted–circle glyph represents <em>folded code</em> from the IDE editor.)</p>
+<p>This now gifts us a <em>choice</em> of calling our rotate function with <em>two</em> alternative orderings of its arguments.</p>
+<p>We can still invoke the way we did before, with the rotation angles supplied as the last arguments:</p>
+<p><code style="color:lightskyblue">rotate(x, y, z,  X_origin, Y_origin, Z_origin,  theta, phi)</code>
+<code>   </code>rotate  x, y, z   round χ, ƴ, ȥ   by θ, ϕ</p>
+<p>Or we can now choose to invoke by specifying the rotation angles ahead of the pivot coordinate point:</p>
+<pre style="background-color:transparent">   <code style="color:lightskyblue;background-color:transparent !important">rotate(x, y, z,  X_origin, Y_origin, Z_origin,  theta, phi)</code></pre>
+<p>We can still proceed further by adding another moon to gather the arguments that we were giving directly to the planet itself, by minting the signature this way:</p>
+<code style="color:lightskyblue">▪ rotate  point(x  y  z)   round (χ  ƴ  ȥ)   by (θ  ϕ)   ───‣  (x  y  z)</code>
+<br>
+<code style="color:lightskyblue">◌</code>
+<br>
+<code style="color:lightskyblue">◌</code>
+<br>
+<code style="color:lightskyblue">◌</code>
+<p>So we can now re-order THREE groups of arguments instead of simply two.</p>
+<p>For example, we now have the freedom to invoke it this way:</p>
+<code style="color:lightskyblue">rotate  by θ, ϕ   point x, y, z   round χ, ƴ, ȥ</code>
+<p>with the rotation angles being specified first, followed by the point we want to rotate, with the pivot point being specified last.</p>
+<p>Or we can invoke this way:</p>
+<code style="color:lightskyblue">rotate  by θ, ϕ   round χ, ƴ, ȥ   point x, y, z</code>
+<p>With the coordinate point we intend to rotate coming dead last in the argument list.  Etc.</p>
+<p>Not that all of these options are equally good, but the point is that we DO have a choice!</p>
+<p>Now, how about being able to use our rotate function with omitted arguments?</p>
+<p>This is easily achieved by specifying <em>which</em> arguments can be omitted.  We can do this on a moon by moon basis:</p>
+<p><em><strong>To Be Continued</strong></em> …</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why PAL]]></title>
+            <link>https://your-docusaurus-site.example.com/features/Why PAL</link>
+            <guid>https://your-docusaurus-site.example.com/features/Why PAL</guid>
+            <pubDate>Fri, 28 Jun 2024 12:57:48 GMT</pubDate>
+            <description><![CDATA[Origineering’s corner stone product is a computer programming language / Operating System called PAL, (acronym for Pan Application Language). It isn’t just a software development tool, but a complete paradigm shift, and is anticipated to be a disruptive technology, like the automobile was to the horse and buggy.]]></description>
+            <content:encoded><![CDATA[<p>Origineering’s corner stone product is a computer programming language / Operating System called PAL, (acronym for Pan Application Language). It isn’t just a software development tool, but a complete paradigm shift, and is anticipated to be a disruptive technology, like the automobile was to the horse and buggy.</p>
 <p>If computer programming languages were flying machines, than all of them would be lighter than air craft. Whether they are procedural, object oriented, functional, or concatenative, such differences between them are the kind of variations between hot air balloons, helium based dirigibles, and hydrogen filled zeppelins.</p>
 <p>The last 70 years has witnessed an endless variety of tinkering, tweaking, and engineering to make them faster, safer, and able to carry more payloads — but in the end, they all are simply just balloons, in fancy shapes, with fancy fans strapped on to them.</p>
 <p>PAL represents an invention that is a completely new type of flying machine that is nothing like the previous menagerie of “air ships”. It is based on totally new principles and technology which makes it faster, easier and safer to use by orders of magnitude.</p>
@@ -58,101 +134,12 @@ tags: [docusaurus]" href="https://your-docusaurus-site.example.com/features/whyp
 <p>To be Continued …</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[planetsandmoons]]></title>
-            <link>https://your-docusaurus-site.example.com/features/planetsandmoons</link>
-            <guid>https://your-docusaurus-site.example.com/features/planetsandmoons</guid>
-            <pubDate>Fri, 28 Jun 2024 06:25:29 GMT</pubDate>
-            <description><![CDATA[---]]></description>
-            <content:encoded><![CDATA[<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="slug-mdx-blog-posttitle-planets--moonsauthors-slorbertags-docusaurus">slug: mdx-blog-post
-title: planets &amp; moons
-authors: [slorber]
-tags: [docusaurus]<a class="hash-link" aria-label="Direct link to slug: mdx-blog-post
-title: planets &amp; moons
-authors: [slorber]
-tags: [docusaurus]" title="Direct link to slug: mdx-blog-post
-title: planets &amp; moons
-authors: [slorber]
-tags: [docusaurus]" href="https://your-docusaurus-site.example.com/features/planetsandmoons#slug-mdx-blog-posttitle-planets--moonsauthors-slorbertags-docusaurus">​</a></h2>
-<p>Introduction</p>
-<p>In software development the term design pattern is a useful appellation for a reoccurring issue that was dealt with haphazardly (often by boiler-plate machinations) but is now understood well enough to get a systematized solution and label.</p>
-<p>Planet &amp; moons is a design pattern unique to PAL; no coding language has ever conceived of this feature let alone implemented it.</p>
-<p>What they are</p>
-<p>The planet is the main function which takes some input arguments and produces some outputs. When the input arguments need to be managed (often to increase invocation clarity) or when the function needs to be modified, then moons are used. Whenever a planet is created, all its moons are defined with it at the same time.</p>
-<p>The moons are specialized local functions, which act as either adverbs, or as adjectives. When used as adjectives, they qualify the inputs to their planet; they group, categorize, and describe their planet function’s argument list. Moons only become visible when their planet is invoked, since they are proximity based.</p>
-<p>The reason for the specific terms ‘planet’ and ‘moons’ are:</p>
-<p>Moons are local to the planet they orbit; their names only come into scope through proximity of the planet they are nearest to. Outside of the orbit of their planet, moons are invisible.</p>
-<p>The planet is big because moons orbit it, not the other way around; it is the influencer, and dictates the meanings of the local moons around it.</p>
-<p>Moons are small because there can be many of them, and they all get their prescribed meaning from the planet they orbit.</p>
-<p>The scope of the moons lie in “the shadow’’ of their planet; if their planet function isn’t nearby, the moons become invisible to the current scope. If a moon so happens to have the same name as some other entity in a wider contextual scope, then its locally (planetary proximity dictated) prescribed meaning takes precedence, and over-rides the outer scope meaning.</p>
-<p>Why we need them</p>
-<p>To aid comprehension, we need to appreciate the need that planet &amp; moons fill. This is best achieved with a concrete example.</p>
-<p>Imagine a function called rotate, that takes 8 arguments for its input, and outputs a tuple of 3 values, and all 8 inputs are of the same data type; which is the default numeric Real. Invoking would look like this in source-code:</p>
-<p>x, y, z ← rotate(x, y, z, X, Y, Z, theta, phi)</p>
-<p>We will now zoom in on the actual function call; no longer showing its output being captured by the assignment statement. So now we simply have:</p>
-<p>rotate(x, y, z, X, Y, Z, theta, phi)</p>
-<p>Excluding the fact it outputs a tuple, this could be done in almost any coding language.</p>
-<p>The question is: how far can we improve our code to explicate the meaning (purpose and intent) of this function invocation?</p>
-<p>We can use white space to meaningfully segregate the various function arguments:</p>
-<p>rotate(x, y, z, X,Y,Z, theta, phi)</p>
-<p>which helps a bit.</p>
-<p>More significantly we can replace the tacit arguments with meaningful names. Something like:</p>
-<p>rotate(x, y, z, X_origin, Y_origin, Z_origin, theta, phi)</p>
-<p>In any other language we would have now reached the end of the road; since no more improvements to readability can be done.</p>
-<p>But not for us; with PAL we can employ source–hinting to take us further, like a Sherpa guide, up the mountain of clarity. We can insert explanatory words (in this case, round and by) to give us:</p>
-<p>rotate(x, y, z, ‹round› X_origin, Y_origin, Z_origin, ‹by› theta, phi)</p>
-<p>In fact, we can now increase clarity by reverting back to using the shorter tacit argument names again:</p>
-<p>rotate(x, y, z, ‹round› X, Y, Z, ‹by› theta, phi)</p>
-<p>We are not done yet, because PAL also provides us with an extended (and extensible) glyph range for symbol names, so we can replace the ‘‘theta’’ and ‘‘phi’’ with shorter names while boosting clarity. Heck while we are at it, we can also come up with better names for the ‘X’, ‘Y’, and ‘Z’ too:</p>
-<p>rotate(x, y, z, ‹round› χ, ƴ, ȥ, ‹by› θ, ϕ)</p>
-<p>Lastly, since we are permitted relaxed–functions, we can ditch the function parenthesis, since they aren’t really earning their keep. Which brings us to:</p>
-<p>rotate x, y, z, ‹round› χ, ƴ, ȥ, ‹by› θ, ϕ</p>
-<p>We could go further and omit all those comas too, but we will stop here.</p>
-<p>So in the journey of elucidating our use of this rotate function, it would seem no more can be done to enhance readability.</p>
-<p>But we have not reached the summit; there remain some arbitrary limitations to what we have achieved:</p>
-<p>What if we want to be able to omit more than one argument by being able to rely on some default values being provided to this function? (Remember that it was stated earlier that ALL the input arguments to this function are of the SAME data type; this would normally mean that only the last function argument can be specified to be an optional parameter.)</p>
-<p>Why not be able to change the invocation order of the arguments? For example, maybe it would look nicer to specify the rotation angles: (θ ϕ) prior to specifying the pivot coordinate: (χ ƴ ȥ).</p>
-<p>The only way forward now, is through use of the planet &amp; moons facility.</p>
-<p>How to make them</p>
-<p>We will now define or extend our function to be a planet, with associated moon functions.</p>
-<p>This is easily done, like so:</p>
-<p>▪ rotate (x y z) round (χ ƴ ȥ) by (θ ϕ) ───‣ (x y z) ◌ ◌ ◌</p>
-<p>In the above definition, the planet function is rotate, and it has 2 moons: by and around; which both gather and label the parameters. (The dotted–circle glyph represents folded code from the IDE editor.)</p>
-<p>This now gifts us a choice of calling our rotate function with two alternative orderings of its arguments.</p>
-<p>We can still invoke the way we did before, with the rotation angles supplied as the last arguments:</p>
-<p>rotate x, y, z round χ, ƴ, ȥ by θ, ϕ</p>
-<p>Or we can now choose to invoke by specifying the rotation angles ahead of the pivot coordinate point:</p>
-<p>rotate x, y, z by θ, ϕ round χ, ƴ, ȥ</p>
-<p>We can still proceed further by adding another moon to gather the arguments that we were giving directly to the planet itself, by minting the signature this way:</p>
-<p>▪ rotate point(x y z) round (χ ƴ ȥ) by (θ ϕ) ───‣ (x y z) ◌ ◌ ◌</p>
-<p>So we can now re-order THREE groups of arguments instead of simply two. For example, we now have the freedom to invoke it this way:</p>
-<p>rotate by θ, ϕ point x, y, z round χ, ƴ, ȥ</p>
-<p>with the rotation angles being specified first, followed by the point we want to rotate, with the pivot point being specified last.</p>
-<p>Or we can invoke this way:</p>
-<p>rotate by θ, ϕ round χ, ƴ, ȥ point x, y, z</p>
-<p>With the coordinate point we intend to rotate coming dead last in the argument list. Etc.</p>
-<p>Not that all of these options are equally good, but the point is that we DO have a choice!</p>
-<p>Now, how about being able to use our rotate function with omitted arguments? This is easily achieved by specifying which arguments can be omitted. We can do this on a moon by moon basis:</p>
-<p>To Be Continued …</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[phrasing]]></title>
-            <link>https://your-docusaurus-site.example.com/features/phrasing</link>
-            <guid>https://your-docusaurus-site.example.com/features/phrasing</guid>
-            <pubDate>Fri, 28 Jun 2024 06:23:23 GMT</pubDate>
-            <description><![CDATA[---]]></description>
-            <content:encoded><![CDATA[<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="slug-mdx-blog-posttitle-phrasingauthors-slorbertags-docusaurus">slug: mdx-blog-post
-title: Phrasing
-authors: [slorber]
-tags: [docusaurus]<a class="hash-link" aria-label="Direct link to slug: mdx-blog-post
-title: Phrasing
-authors: [slorber]
-tags: [docusaurus]" title="Direct link to slug: mdx-blog-post
-title: Phrasing
-authors: [slorber]
-tags: [docusaurus]" href="https://your-docusaurus-site.example.com/features/phrasing#slug-mdx-blog-posttitle-phrasingauthors-slorbertags-docusaurus">​</a></h2>
-<p>Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.</p>
+            <title><![CDATA[Phrasing]]></title>
+            <link>https://your-docusaurus-site.example.com/features/Phrasing</link>
+            <guid>https://your-docusaurus-site.example.com/features/Phrasing</guid>
+            <pubDate>Fri, 28 Jun 2024 12:57:40 GMT</pubDate>
+            <description><![CDATA[Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.]]></description>
+            <content:encoded><![CDATA[<p>Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.</p>
 <p>Phrasing describes source code instructions expressed with: relaxed–functions, nouns, verbs, adjectives, adverbs, source–hints, code–hints, 2D–operators, and fusion–operators — 9 patterns that elucidate the meaning and intention of the code. This is in stark contrast against statement based syntax of traditional coding languages; typically limited to just functions &amp; operators.</p>
 <p>A relaxed–function means that at invocation: the function’s formal parentheses are omitted, or the commas between arguments are dispensed with, or the function’s name occurs anywhere amongst its arguments (instead of preceding them). This is also called free form notation.</p>
 <p>Nouns are an abstraction of mutable data; they are modified by verbs instead of by assignment operations. For example if we had a noun variable like ‘robot_hand’, we would alter it with manipulating verbs such as ‘open’ or ‘close’. We would not change its state with an assignment operator because this would be a mismatch of abstraction.</p>

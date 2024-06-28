@@ -1,11 +1,4 @@
 
----
-slug: mdx-blog-post
-title: Phrasing 
-authors: [slorber]
-tags: [docusaurus]
----
-
 
 Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.
 

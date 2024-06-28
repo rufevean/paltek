@@ -1,13 +1,5 @@
 
 
----
-slug: mdx-blog-post
-title: planets & moons 
-authors: [slorber]
-tags: [docusaurus]
----
-
-
 
 
 Origineering’s corner stone product is a computer programming language / Operating System called PAL, (acronym for Pan Application Language). It isn’t just a software development tool, but a complete paradigm shift, and is anticipated to be a disruptive technology, like the automobile was to the horse and buggy.
