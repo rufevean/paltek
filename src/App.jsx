@@ -7,7 +7,9 @@ import Features from './layouts/features';
 import SplashScreen from './layouts/splashScreen';
 
 function App() {
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(() => {
+    return !sessionStorage.getItem('splashShown');
+  });
 
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -31,10 +33,13 @@ function App() {
     };
   }, []);
 
-  // Determine whether to show splash screen based on the current route
-  const shouldShowSplash = showSplash && window.location.pathname === '/';
+  useEffect(() => {
+    if (!showSplash) {
+      sessionStorage.setItem('splashShown', 'true');
+    }
+  }, [showSplash]);
 
-  if (shouldShowSplash) {
+  if (showSplash) {
     return <SplashScreen />;
   }
 
