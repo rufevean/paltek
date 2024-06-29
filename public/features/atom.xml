@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-site.example.com/features/</id>
     <title>Pal-Tek  Blog</title>
-    <updated>2024-06-28T14:01:05.711Z</updated>
+    <updated>2024-06-28T14:04:56.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-site.example.com/features/"/>
     <subtitle>Pal-Tek  Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Planets & Moons]]></title>
         <id>https://your-docusaurus-site.example.com/features/Planets &amp; Moons</id>
         <link href="https://your-docusaurus-site.example.com/features/Planets &amp; Moons"/>
-        <updated>2024-06-28T14:01:05.711Z</updated>
+        <updated>2024-06-28T14:04:56.000Z</updated>
         <summary type="html"><![CDATA[Introduction]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="introduction"><em>Introduction</em><a class="hash-link" aria-label="Direct link to introduction" title="Direct link to introduction" href="https://your-docusaurus-site.example.com/features/Planets%20&amp;%20Moons#introduction">​</a></h3>
 <p>In software development the term <em>design pattern</em> is a useful appellation for a reoccurring issue that was dealt with haphazardly (often by boiler-plate machinations) but is now understood well enough to get a systematized solution and label.</p>
@@ -95,10 +95,32 @@ p
 <p><em><strong>To Be Continued</strong></em> …</p>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Phrasing]]></title>
+        <id>https://your-docusaurus-site.example.com/features/Phrasing</id>
+        <link href="https://your-docusaurus-site.example.com/features/Phrasing"/>
+        <updated>2024-06-28T08:08:48.000Z</updated>
+        <summary type="html"><![CDATA[Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.]]></summary>
+        <content type="html"><![CDATA[<p>Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.</p>
+<p>Phrasing describes source code instructions expressed with: relaxed–functions, nouns, verbs, adjectives, adverbs, source–hints, code–hints, 2D–operators, and fusion–operators — 9 patterns that elucidate the meaning and intention of the code. This is in stark contrast against statement based syntax of traditional coding languages; typically limited to just functions &amp; operators.</p>
+<p>A relaxed–function means that at invocation: the function’s formal parentheses are omitted, or the commas between arguments are dispensed with, or the function’s name occurs anywhere amongst its arguments (instead of preceding them). This is also called free form notation.</p>
+<p>Nouns are an abstraction of mutable data; they are modified by verbs instead of by assignment operations. For example if we had a noun variable like ‘robot_hand’, we would alter it with manipulating verbs such as ‘open’ or ‘close’. We would not change its state with an assignment operator because this would be a mismatch of abstraction.</p>
+<p>Verbs are functions that use adjectives or adverbs to aid their operation; done by planets.</p>
+<p>Adjectives and adverbs are functions that clarify/qualify function arguments, or direct/modify the actions of a verb. They are done by moons.</p>
+<p>Source–hints are words inserted into the source code to smooth the flow and clarify intent, they are not executed, but aid readability; they are kin to source–code comments of traditional languages, but with the unique distinction of diminutively blending in with the code, instead of interrupting it. They are entered into source by bracketing a word (or words) with tiny angle brackets.</p>
+<p>Code–hints, unlike their passive source–hint counterparts, are active at compile–time and executed at run–time. They are textual substitution macros, locally defined inside a scope, specially purposed with the task of clarifying the intent of a piece of code (often boiler plate) by replacing its mechanistic details with a meaningful name.</p>
+<p>A 2D–operator is an operator that has at least 1 of its operands vertically adjacent above or below it. Any operator in PAL can be created or extended (with an overload definition) to access its operands in 2 dimensions; above and below, as well as the traditional left and right — so individual operators are capable of having an arity of 1 to 4 (operands). Instances of 2D–operators are: Integral, Summation, and VinculumDivision. Example of an operator with an extended 2D definition is the Random operator.</p>
+<p>A fusion–operator is a constellation of operators which fuse together to collectively form a corporate entity; essentially a hyper operator. For example, in the statement:</p>
+<p>x ← 200 + 10 %</p>
+<p>which reads as: x is assigned 200 plus 10 percent, the plus operator doesn’t have the regular meaning of “addition”, since if it did, it would simply take the 200 on the left, add the 10 from the right, and return the value 210, which would NOT be the expected result — instead, the plus is modified by the percent that follows, and the percent (which is normally a binary operator) derives contextual meaning from the preceding presence of the plus. By fusing together, these 2 operators express a hyper operation (in this case named Plus–Percent) to produce the correct result, which would be 220. The cognomen fusion–operator is apt, since the word fusion means: “The process or result of joining two or more things together to form a single entity”.</p>
+<p>In fact PAL has more than 10 fusion–operators, and some of them are composed of more than 2 individual operators (like the full Bra–Ket and ApproximatelyEquals–PlusOrMinus–Percent operators). The name for the so called ternary operator of some coding languages would be Question–Colon since the naming convention for specific fusion–operators is a capitalized hyphenated derivation from the names of individual operators, as they sequentially appear in their fusion constellation.</p>
+<p>Collectively, these 9 aids to abstraction, all instances of phrasing, open a new cosmos of syntactic possibilities — ushering unconstrained power of expression, and self-explanatory clarity of intention; minimizing need for source comments.</p>
+<p>To Be Continued …</p>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Why PAL]]></title>
         <id>https://your-docusaurus-site.example.com/features/Why PAL</id>
         <link href="https://your-docusaurus-site.example.com/features/Why PAL"/>
-        <updated>2024-06-28T12:57:48.886Z</updated>
+        <updated>2024-06-28T08:08:48.000Z</updated>
         <summary type="html"><![CDATA[Origineering’s corner stone product is a computer programming language / Operating System called PAL, (acronym for Pan Application Language). It isn’t just a software development tool, but a complete paradigm shift, and is anticipated to be a disruptive technology, like the automobile was to the horse and buggy.]]></summary>
         <content type="html"><![CDATA[<p>Origineering’s corner stone product is a computer programming language / Operating System called PAL, (acronym for Pan Application Language). It isn’t just a software development tool, but a complete paradigm shift, and is anticipated to be a disruptive technology, like the automobile was to the horse and buggy.</p>
 <p>If computer programming languages were flying machines, than all of them would be lighter than air craft. Whether they are procedural, object oriented, functional, or concatenative, such differences between them are the kind of variations between hot air balloons, helium based dirigibles, and hydrogen filled zeppelins.</p>
@@ -131,27 +153,5 @@ p
 <p>PAL is not just a language or Operating System, it is a philosophy.</p>
 <p>Once a programmer tries developing software in PAL, he/she will never want to go back to the “old way” of doing things – because the old way sucks!</p>
 <p>To be Continued …</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Phrasing]]></title>
-        <id>https://your-docusaurus-site.example.com/features/Phrasing</id>
-        <link href="https://your-docusaurus-site.example.com/features/Phrasing"/>
-        <updated>2024-06-28T12:57:40.318Z</updated>
-        <summary type="html"><![CDATA[Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.]]></summary>
-        <content type="html"><![CDATA[<p>Phrasing is an abstraction enabling facility unique to PAL; with no precedent in any coding language.</p>
-<p>Phrasing describes source code instructions expressed with: relaxed–functions, nouns, verbs, adjectives, adverbs, source–hints, code–hints, 2D–operators, and fusion–operators — 9 patterns that elucidate the meaning and intention of the code. This is in stark contrast against statement based syntax of traditional coding languages; typically limited to just functions &amp; operators.</p>
-<p>A relaxed–function means that at invocation: the function’s formal parentheses are omitted, or the commas between arguments are dispensed with, or the function’s name occurs anywhere amongst its arguments (instead of preceding them). This is also called free form notation.</p>
-<p>Nouns are an abstraction of mutable data; they are modified by verbs instead of by assignment operations. For example if we had a noun variable like ‘robot_hand’, we would alter it with manipulating verbs such as ‘open’ or ‘close’. We would not change its state with an assignment operator because this would be a mismatch of abstraction.</p>
-<p>Verbs are functions that use adjectives or adverbs to aid their operation; done by planets.</p>
-<p>Adjectives and adverbs are functions that clarify/qualify function arguments, or direct/modify the actions of a verb. They are done by moons.</p>
-<p>Source–hints are words inserted into the source code to smooth the flow and clarify intent, they are not executed, but aid readability; they are kin to source–code comments of traditional languages, but with the unique distinction of diminutively blending in with the code, instead of interrupting it. They are entered into source by bracketing a word (or words) with tiny angle brackets.</p>
-<p>Code–hints, unlike their passive source–hint counterparts, are active at compile–time and executed at run–time. They are textual substitution macros, locally defined inside a scope, specially purposed with the task of clarifying the intent of a piece of code (often boiler plate) by replacing its mechanistic details with a meaningful name.</p>
-<p>A 2D–operator is an operator that has at least 1 of its operands vertically adjacent above or below it. Any operator in PAL can be created or extended (with an overload definition) to access its operands in 2 dimensions; above and below, as well as the traditional left and right — so individual operators are capable of having an arity of 1 to 4 (operands). Instances of 2D–operators are: Integral, Summation, and VinculumDivision. Example of an operator with an extended 2D definition is the Random operator.</p>
-<p>A fusion–operator is a constellation of operators which fuse together to collectively form a corporate entity; essentially a hyper operator. For example, in the statement:</p>
-<p>x ← 200 + 10 %</p>
-<p>which reads as: x is assigned 200 plus 10 percent, the plus operator doesn’t have the regular meaning of “addition”, since if it did, it would simply take the 200 on the left, add the 10 from the right, and return the value 210, which would NOT be the expected result — instead, the plus is modified by the percent that follows, and the percent (which is normally a binary operator) derives contextual meaning from the preceding presence of the plus. By fusing together, these 2 operators express a hyper operation (in this case named Plus–Percent) to produce the correct result, which would be 220. The cognomen fusion–operator is apt, since the word fusion means: “The process or result of joining two or more things together to form a single entity”.</p>
-<p>In fact PAL has more than 10 fusion–operators, and some of them are composed of more than 2 individual operators (like the full Bra–Ket and ApproximatelyEquals–PlusOrMinus–Percent operators). The name for the so called ternary operator of some coding languages would be Question–Colon since the naming convention for specific fusion–operators is a capitalized hyphenated derivation from the names of individual operators, as they sequentially appear in their fusion constellation.</p>
-<p>Collectively, these 9 aids to abstraction, all instances of phrasing, open a new cosmos of syntactic possibilities — ushering unconstrained power of expression, and self-explanatory clarity of intention; minimizing need for source comments.</p>
-<p>To Be Continued …</p>]]></content>
     </entry>
 </feed>

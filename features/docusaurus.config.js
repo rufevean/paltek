@@ -87,11 +87,12 @@ const config = {
                         className: 'nav-forum nav-item',
                     },
                     {
-                        to: '/',
+                        to: '../',
                         label: '.',
                         position: 'left',
                         className: 'nav-home nav-item nav__home',
                     },
+
                     {
                         to: '/playground',
                         label: 'Playground',
