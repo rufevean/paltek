@@ -68,3 +68,16 @@
      text-align: center;
      flex-direction: column;
 }
+
+.home-content-pd{
+    display:flex; 
+    width: 90vw;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    margin-top : 10%;
+}
+
+.home-pd{
+    width: 30%;
+}

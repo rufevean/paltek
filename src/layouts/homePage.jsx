@@ -4,6 +4,7 @@ import NavBar from './navBar';
 import '../styles/animated-static-bg.css';
 import start from '../assets/start-icon.png'; 
 import download from '../assets/download-icon.png'; 
+import des from '../assets/pd.png'; 
 import { Link } from 'react-router-dom';
 
 function HomePage() {
@@ -21,6 +22,7 @@ function HomePage() {
 
         </div>
             <div className="home-content-wip"> <div> <span className="highlight-color"> Work in Progress </span> </div>  <div> please check <Link to='/features'> Articles</Link>   to know more</div> <div> To contact : <a href="mailto:contact@pal-tek.com">mail </a> </div> </div>
+        <div className="home-content-pd"> <div > Current Proposed Design : </div>  <img src={des} className="home-pd" /> </div> 
         
       </div>
     </div>
