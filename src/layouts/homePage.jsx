@@ -4,7 +4,7 @@ import NavBar from './navBar';
 import '../styles/animated-static-bg.css';
 import start from '../assets/start-icon.png'; 
 import download from '../assets/download-icon.png'; 
-import des from '../assets/pd.png'; 
+import des from '../assets/homepage.png'; 
 import { Link } from 'react-router-dom';
 
 function HomePage() {
