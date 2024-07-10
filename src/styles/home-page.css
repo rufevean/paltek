@@ -71,11 +71,11 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
     transform: rotate(0deg);
 }
 
-.section1 .animated-static-bg {
+.section1 .animated-static-bg-1 {
     visibility: hidden; /* Initially hidden */
 }
 
-.section1:hover .animated-static-bg {
+.section1:hover .animated-static-bg-1 {
     visibility: visible; /* Show static background on hover */
 }
 
@@ -84,11 +84,11 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
     background-color: transparent;
 }
 
-.section2 .animated-static-bg {
+.section2 .animated-static-bg-1 {
     visibility: hidden; /* Initially hidden */
 }
 
-.section2:hover .animated-static-bg {
+.section2:hover .animated-static-bg-1 {
     visibility: visible; /* Show static background on hover */
 }
 
@@ -97,11 +97,11 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
     background-color: transparent;
 }
 
-.section3 .animated-static-bg {
+.section3 .animated-static-bg-1 {
     visibility: hidden; /* Initially hidden */
 }
 
-.section3:hover .animated-static-bg {
+.section3:hover .animated-static-bg-1 {
     visibility: visible; /* Show static background on hover */
 }
 
@@ -111,11 +111,11 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
 }
 .section4:hover{
 }
-.section4 .animated-static-bg {
+.section4 .animated-static-bg-1 {
     visibility: hidden; /* Initially hidden */
 }
 
-.section4:hover .animated-static-bg {
+.section4:hover .animated-static-bg-1 {
     visibility: visible; /* Show static background on hover */
 }
 
@@ -124,11 +124,11 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
     background-color: transparent;
 }
 
-.section5 .animated-static-bg {
+.section5 .animated-static-bg-1 {
     visibility: hidden; /* Initially hidden */
 }
 
-.section5:hover .animated-static-bg {
+.section5:hover .animated-static-bg-1 {
     visibility: visible; /* Show static background on hover */
 }
 
@@ -137,16 +137,16 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
     background-color: transparent;
 }
 
-.section6 .animated-static-bg {
+.section6 .animated-static-bg-1 {
     visibility: hidden; /* Initially hidden */
 }
 
-.section6:hover .animated-static-bg {
+.section6:hover .animated-static-bg-1 {
     visibility: visible; /* Show static background on hover */
 }
 
 /* Animated Static Background */
-.animated-static-bg {
+.animated-static-bg-1 {
     position: absolute;
     top: -50%;
     left: -50%;
@@ -156,7 +156,6 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
     height: 200vh;
     background: transparent url("../assets/noise_transparent.png") repeat 0 0;
     background-repeat: repeat;
-    animation: bg-animation 100s infinite;
     opacity: 1;
     pointer-events: none; /* Prevent static background from blocking hover events */
 }
@@ -212,4 +211,47 @@ background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
 .section6 {
     background-color: red;
     transform: rotate(270deg); /* Keep as it is */
+}
+
+.section6-content{
+    font-size:10rem;
+    z-index:1000000;
+    color:white;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+
+.section{
+    background:transparent;
+}
+
+.animated-static-bg-1{
+    display:flex;
+    color:white;
+    font-size:10rem;
+    justify-content:center;
+    align-items:flex-end;
+
+}
+
+
+
+.text-content {
+    display: none;
+    color: white;
+    font-size: 3rem;
+    z-index: 1000000;
+    position: absolute;
+
+}
+
+/* Show text-content on hover */
+.section6:hover .text-content {
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+        top:49%;
+    left: 55%;
+    font-family: 'Lato', sans-serif;
 }

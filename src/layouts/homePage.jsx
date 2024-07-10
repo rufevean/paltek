@@ -17,22 +17,23 @@ function HomePage() {
       <div className="overlay"></div>
       <div className="sections-container">
         <div className="section section1" onClick={() => handleNavigation('https://example.com/section1')}>
-          <div className="animated-static-bg"></div> {/* This is the animated background */}
+          <div className="animated-static-bg-1"></div> {/* This is the animated background */}
         </div>
         <div className="section section2" onClick={() => handleNavigation('https://example.com/section2')}>
-          <div className="animated-static-bg"></div> {/* This is the animated background */}
+          <div className="animated-static-bg-1"></div> {/* This is the animated background */}
         </div>
         <div className="section section3" onClick={() => handleNavigation('https://example.com/section3')}>
-          <div className="animated-static-bg"></div> {/* This is the animated background */}
+          <div className="animated-static-bg-1"></div> {/* This is the animated background */}
         </div>
         <div className="section section4" onClick={() => handleNavigation('https://example.com/section4')}>
-          <div className="animated-static-bg"></div> {/* This is the animated background */}
+          <div className="animated-static-bg-1"></div> {/* This is the animated background */}
         </div>
         <div className="section section5" onClick={() => handleNavigation('https://example.com/section5')}>
-          <div className="animated-static-bg"></div> {/* This is the animated background */}
+          <div className="animated-static-bg-1"></div> {/* This is the animated background */}
         </div>
         <div className="section section6" onClick={() => handleNavigation('https://example.com/section6')}>
-          <div className="animated-static-bg"></div> {/* This is the animated background */}
+          <div className="animated-static-bg-1"><div className="text-content" > Playground</div></div> {/* This is the animated background */}
+            <div className="section6-content">Playground</div>
         </div>
       </div>
     </div>
