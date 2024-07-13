@@ -1,32 +1,44 @@
-import '../styles/home-page.css'
+
+import '../styles/home-page.css';
 import React from 'react';
-import NavBar from './navBar';
-import '../styles/animated-static-bg.css';
-import start from '../assets/start-icon.png'; 
-import download from '../assets/download-icon.png'; 
-import des from '../assets/homepage.png'; 
-import { Link } from 'react-router-dom';
+import '../styles/animated-static-bg.css'; // Ensure this import is correct according to your project structure
+import planet from '../assets/planet.png';
+import bbg from '../assets/bbg.png';
 
 function HomePage() {
+  const handleNavigation = (url) => {
+    window.location.href = url;
+  };
+
   return (
     <div className="home-page">
-
-      <NavBar /> 
-      <div className="home-content">
-        <div className="home-content-text">
-            <div className="home-content-text-disc"> Experience <span className="highlight-font highlight-color"> PAL </span> : a revolutionary programming language with unparalleled readability, fast development, and unique features like <span className="highlight-color"> 2D canvas notation </span>  and <span className="highlight-color" > mintable operators </span> . Transform your coding with the power of <span className="highlight-font highlight-color" > PAL </span> . </div>
-            <div className="home-content-text-buttons">
-                <Link to="/obtain" className="home-content-text-buttons-1 home-button"> <img src={download} /> <div >   Download </div> </Link>
-                <Link to="/features" className="home-content-text-buttons-2 home-button">  <img src={start} /> <div> Get Started </div> </Link>
-            </div> 
-
+      <img src={planet} className="home-page-planet" alt="planet" />
+      <img src={bbg} className="home-page-bbg" alt="bbg" />
+      <div className="overlay"></div>
+      <div className="sections-container">
+        <div className="section section1" onClick={() => handleNavigation('https://example.com/section1')}>
+          <div className="animated-static-bg-1"><div className="text-content" > Notes & Essays </div></div> {/* This is the animated background */}
         </div>
-            <div className="home-content-wip"> <div> <span className="highlight-color"> Work in Progress </span> </div>  <div> please check <Link to='/features'> Articles</Link>   to know more</div> <div> To contact : <a href="mailto:contact@pal-tek.com">mail </a> </div> </div>
-        <div className="home-content-pd"> <div > Current Proposed Design : </div>  <img src={des} className="home-pd" /> </div> 
-        
+        <div className="section section2" onClick={() => handleNavigation('/features')}>
+          <div className="animated-static-bg-1"><div className="text-content" > Features </div></div> {/* This is the animated background */}
+        </div>
+        <div className="section section3" onClick={() => handleNavigation('https://example.com/section3')}>
+          <div className="animated-static-bg-1"><div className="text-content" > Forum </div></div> {/* This is the animated background */}
+        </div>
+        <div className="section section4" onClick={() => handleNavigation('https://example.com/section4')}>
+
+          <div className="animated-static-bg-1"><div className="text-content" > Docs  </div></div> {/* This is the animated background */}
+        </div>
+        <div className="section section5" onClick={() => handleNavigation('https://example.com/section5')}>
+          <div className="animated-static-bg-1"><div className="text-content" > Obtain PAL </div></div> {/* This is the animated background */}
+        </div>
+        <div className="section section6" onClick={() => handleNavigation('https://example.com/section6')}>
+          <div className="animated-static-bg-1"><div className="text-content" > Playground</div></div> {/* This is the animated background */}
+        </div>
       </div>
+      <div className="homepage-footer">©2024 <span className="home-highlight"> PAL-Tek </span>   The content on this website is made available under the Apache License, Version 2.0.</div>
     </div>
   );
 }
 
-export default HomePage; 
+export default HomePage;

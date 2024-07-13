@@ -1,83 +1,333 @@
 
-.home-content-text{
-    display:flex;
-    flex-direction:column;
-    justify-content:start;
-    align-items: center;
-    margin-left: 8%;
-    gap: 2rem;
-    text-align: center;
-    font-family:"Lato", sans-serif;
-    padding-top: 16%;
-    padding-right: 10%;
-}
+/* Ensure the correct import path for animated-static-bg.css in your project */
 
-.home-content-text-disc{
-    font-size:1.5rem;
-}
-
-.home-content-text-buttons{
-    display:flex;
-    gap:2rem;
-
-}
-
-
-.home-button{
-    padding : 0.2rem 2rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    border: none;
-    font-weight: 600;
-    color : #1B1B1B !important;
-    background-color: crimson;
-    display: flex; 
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center; 
-
-}
-
-
-.highlight-font{
-    font-family : "tele-marines";
-}
-
-
-.highlight-color{
-    color : crimson;
-}
-
-.home-page{
-    background : url("../assets/background-home.png");
+/* Home Page Styles */
+.home-page {
+    background: url("../assets/homebg.png");
     background-size: cover;
+    width: 100vw;
     height: 100vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure positioning context for absolute children */
+    overflow: hidden; /* Prevent children from overflowing */
 }
 
+.home-page-planet, .home-page-bbg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
 
+.home-page-planet {
+    border-radius: 50%;
+    background:#232122;
+    z-index: 1000; /* Ensure planet is above bbg */
+}
 
-.home-content-wip{
+.home-page-bbg {
+    transform : translate(-52%,-48%);
+}
+
+.home-page-planet:hover ~ .home-page-bbg {
+    transform: translate(-52%, -48%) scale(1.1); /* Increase size on hover */
+}
+
+/* Sections Container */
+.sections-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(50% at 50% 50%);
+    z-index: 5; /* Ensure this is below the images */
+}
+
+/* Sections */
+.section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+    transition: background-color 0.3s ease;
+    z-index: 100;
+    overflow: hidden; /* Ensure the static background effect fits */
+}
+
+.section:hover {
+    cursor: pointer;
+
+background-color: rgba(220, 20, 60, 0.1); /* Crimson with 50% opacity */
+    z-index: 101; /* Ensure this is above the other sections */
+}
+
+/* Specific styles for each section with static background */
+.section1 {
+    transform: rotate(0deg);
+}
+
+.section1 .animated-static-bg-1 {
+    visibility: hidden; /* Initially hidden */
+}
+
+.section1:hover .animated-static-bg-1 {
+    visibility: visible; /* Show static background on hover */
+}
+
+.section2 {
+    transform: rotate(100deg);
+    background-color: transparent;
+}
+
+.section2 .animated-static-bg-1 {
+    visibility: hidden; /* Initially hidden */
+}
+
+.section2:hover .animated-static-bg-1 {
+    visibility: visible; /* Show static background on hover */
+}
+
+.section3 {
+    transform: rotate(120deg);
+    background-color: transparent;
+}
+
+.section3 .animated-static-bg-1 {
+    visibility: hidden; /* Initially hidden */
+}
+
+.section3:hover .animated-static-bg-1 {
+    visibility: visible; /* Show static background on hover */
+}
+
+.section4 {
+    transform: rotate(180deg);
+    background-color: transparent;
+}
+.section4:hover{
+}
+.section4 .animated-static-bg-1 {
+    visibility: hidden; /* Initially hidden */
+}
+
+.section4:hover .animated-static-bg-1 {
+    visibility: visible; /* Show static background on hover */
+}
+
+.section5 {
+    transform: rotate(240deg);
+    background-color: transparent;
+}
+
+.section5 .animated-static-bg-1 {
+    visibility: hidden; /* Initially hidden */
+}
+
+.section5:hover .animated-static-bg-1 {
+    visibility: visible; /* Show static background on hover */
+}
+
+.section6 {
+    transform: rotate(300deg);
+    background-color: transparent;
+}
+
+.section6 .animated-static-bg-1 {
+    visibility: hidden; /* Initially hidden */
+}
+
+.section6:hover .animated-static-bg-1 {
+    visibility: visible; /* Show static background on hover */
+}
+
+/* Animated Static Background */
+.animated-static-bg-1 {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url("../assets/noise_transparent.png") repeat 0 0;
+    background-repeat: repeat;
+    opacity: 1;
+    pointer-events: none; /* Prevent static background from blocking hover events */
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0, 0) }
+    10% { transform: translate(-5%, -5%) }
+    20% { transform: translate(-10%, 5%) }
+    30% { transform: translate(5%, -10%) }
+    40% { transform: translate(-5%, 15%) }
+    50% { transform: translate(-10%, 5%) }
+    60% { transform: translate(15%, 0) }
+    70% { transform: translate(0, 10%) }
+    80% { transform: translate(-15%, 0) }
+    90% { transform: translate(10%, 5%) }
+    100% { transform: translate(5%, 0) }
+}
+
+.section {
+    background: rgba(0, 0, 0, 0.1);
+}
+/* Specific styles for each section with static background */
+.section1 {
+    transform: rotate(-20deg); /* Changed to 70 degrees */
+    clip-path: polygon(50% 50%, 100% 0, 100% 80%);
+    background-color: rgba(0, 0, 0, 01); /* Keep as it is */
+}
+
+.section2 {
+    transform: rotate(40deg); /* Changed to 30 degrees */
+    background:blue;
+}
+
+.section3 {
+    transform: rotate(100deg); /* Keep as it is */
+    background:yellow;
+
+    clip-path: polygon(50% 50%, 100% 0, 100% 80%);
+}
+
+.section4 {
+    transform: rotate(165deg); /* Keep as it is */
+     clip-path: polygon(50% 50%, 100% 0, 100% 50%);
+     background:white;
+}
+
+.section5 {
+    transform: rotate(200deg); /* Keep as it is */
+    clip-path: polygon(50% 50%, 100% 0, 100% 50%);
+    background-color:teal;
+}
+
+.section6 {
+    background-color: red;
+    transform: rotate(270deg); /* Keep as it is */
+}
+
+.section6-content{
+    font-size:10rem;
+    z-index:1000000;
+    color:white;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+
+.section{
+    background:transparent;
+}
+
+.animated-static-bg-1{
     display:flex;
+    color:white;
+    font-size:10rem;
     justify-content:center;
-    align-items:center;
-    gap: 2rem;
-    margin-top: 10%;
-    font-family:"Lato", sans-serif;
-    font-size: 5rem;
-     text-align: center;
-     flex-direction: column;
+    align-items:flex-end;
+
 }
 
-.home-content-pd{
-    display:flex; 
-    width: 90vw;
-    justify-content:center;
-    align-items:center;
-    gap:2rem;
-    margin-top : 10%;
+
+
+.text-content {
+    display: none;
+    color: white;
+    font-size: 3rem;
+    z-index: 1000000;
+    position: absolute;
+
 }
 
-.home-pd{
-    width: 30%;
+/* Show text-content on hover */
+.section6:hover .text-content {
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+        top:49%;
+    left: 55%;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Show text-content on hover */
+.section5:hover .text-content {
+    display: flex;
+    justify-content: center;
+        top:42%;
+    transform: rotate(160deg);
+    left: 62%;
+    font-family: 'Lato', sans-serif;
+}
+
+.section4:hover .text-content {
+    display: flex;
+    justify-content: center;
+    transform: rotate(170deg);
+        top:42%;
+
+    left:66%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.section3:hover .text-content {
+    display: flex;
+    justify-content: center;
+        top:47%;
+    left: 58%;
+    font-family: 'Lato', sans-serif;
+    transform : rotate(-100deg);
+}
+
+
+.section2:hover .text-content {
+    display: flex;
+    justify-content: center;
+    padding-left:200px;
+    transform: rotate(90deg);
+        top:49%;
+    left: 55%;
+    font-family: 'Lato', sans-serif;
+    transform : rotate(0deg);
+}
+
+
+.section1:hover .text-content {
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(90deg);
+        top:49%;
+    left: 55%;
+    font-family: 'Lato', sans-serif;
+    transform : rotate(0deg);
+}
+
+
+
+.homepage-footer{
+    position:absolute;
+    bottom:2rem ;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    right: 2rem;
+    align-items:center;
+    color:white;
+    font-size:1rem;
+    font-family: 'Lato', sans-serif;
+    z-index:1000000;
+}
+
+
+.home-highlight{
+    color:rgba(220, 20, 60, 1);
+    font-family: 'Lato', sans-serif;
+    padding:0 0.5rem;
 }
