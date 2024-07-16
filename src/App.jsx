@@ -45,6 +45,7 @@ function App() {
 
   return (
     <Router>
+      <div className="warning"> Please Note this site isnt made for mobile devices, please use a desktop or laptop for the best experience</div> 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/features" element={<Features />} />
