@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/testflare/:path*",
+      "destination": "https://paltek.assistflare.com/:path*"
+    }
+  ]
+}
